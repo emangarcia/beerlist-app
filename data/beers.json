@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Sticky Hands",
+    "brewer": "Block 15",
+    "location": "Corvallis, OR",
+    "image": "beer.jpg"
+  },
+  {
+    "id": 2,
+    "name": "RPM IPA ",
+    "brewer": "Boneyard",
+    "location": "Portland, OR",
+    "image": "beer.jpg"
+  }
+]
