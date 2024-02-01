@@ -2,9 +2,18 @@
 
 A Beer app built in Nuxt
 
+### Built With
+
+- [![Vue][Vue.js]][Vue-url]
+- [![Nuxt][Nuxt.js]][Nuxt-url]
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### Setup
 
 Make sure to install the dependencies:
 
@@ -22,7 +31,7 @@ yarn install
 bun install
 ```
 
-## Development Server
+### Local Development
 
 Start the development server on `http://localhost:3000`:
 
@@ -40,38 +49,4 @@ yarn dev
 bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
