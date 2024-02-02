@@ -4,13 +4,43 @@
     "name": "Sticky Hands",
     "brewer": "Block 15",
     "location": "Corvallis, OR",
-    "image": "beer.jpg"
+    "image": "beer1.png",
+    "description": "Offering a luscious blend of flavor and drinkability, this Hop Experience Ale features ample additions of sticky, lupulin-packed hops, grown in the Pacific Northwest. The result is an aromatic blast of citrus, tropical fruit, and dank herb that transitions into resinous hop flavor and a delightfully balanced finish.",
+    "abv": "8.1%",
+    "ibu": "110",
+    "style": "Imperial IPA"
   },
   {
     "id": 2,
     "name": "RPM IPA ",
     "brewer": "Boneyard",
     "location": "Portland, OR",
-    "image": "beer.jpg"
+    "image": "beer2.png",
+    "description": "Brewed using 6 different NW varieties of hops at over 2.5 pounds per barrel, RPM IPA focuses on extreme hoppiness rather than bitterness. It’s golden to copper in color with a complex malt profile that will not overshadow the hops. Our flagship, RPM IPA, will satisfy any opinionated hop forward IPA consumer.",
+    "abv": "6.6%",
+    "ibu": "50",
+    "style": "American IPA"
+  },
+  {
+    "id": 3,
+    "name": "Game On",
+    "brewer": "LEVEL Beer",
+    "location": "Portland, OR",
+    "image": "beer3.png",
+    "description": "Light body with a mild maltiness, big juicy hop aroma, lots of hoppy flavor balanced by a moderate bitterness. Big citrus and pine.",
+    "abv": "6.5%",
+    "ibu": "65",
+    "style": "American IPA"
+  },
+  {
+    "id": 4,
+    "name": "Fresh Flow",
+    "brewer": "Block 15",
+    "location": "Corvallis, OR",
+    "image": "beer4.png",
+    "description": "Fresh Flow is a refreshing, tropically hoppy IPA featuring fruit-forward American and New Zealand hop varietals that are balanced by a crisp malt base designed for sunny summer drinking. Brewed in cooperation with artist Chris Herbst of Ashland's Flow Factory NW, whose work is featured on the can label, Fresh Flow will be brewed often and released fresh throughout the summer.",
+    "abv": "6.5%",
+    "ibu": "65",
+    "style": "American IPA"
   }
 ]

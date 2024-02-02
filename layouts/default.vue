@@ -1,9 +1,10 @@
 <template>
   <NuxtLoadingIndicator color="rgb(51 123 208)" />
   <TheHeader></TheHeader>
-  <main id="main" class="py-[15vh]">
+  <main id="main" class="py-[15vh] min-h-screen">
     <NuxtPage />
   </main>
+  <TheFooter></TheFooter>
 </template>
 <script>
 export default {
@@ -12,6 +13,9 @@ export default {
 </script>
 
 <style>
+body {
+  background: theme("colors.dark")
+}
 .bg-blue-gradient,
 .text-gradient {
   background: linear-gradient(

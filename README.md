@@ -5,7 +5,7 @@ A Beer app built in Nuxt
 ### Built With
 
 - [![Vue][Vue.js]][Vue-url]
-- [![Nuxt][Nuxt.js]][Nuxt-url]
+- [![Nuxtjs][Nuxt.js]][Nuxt-url]
 
 <!-- GETTING STARTED -->
 
@@ -50,3 +50,8 @@ bun run dev
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Nuxt.js]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
+[Nuxt-url]: https://nuxt.com/

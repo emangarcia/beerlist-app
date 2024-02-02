@@ -5,5 +5,6 @@
 </template>
 
 <script setup lang="ts">
-const { beers } = useBeers();
+const { beers, allBeers } = useBeers();
+
 </script>

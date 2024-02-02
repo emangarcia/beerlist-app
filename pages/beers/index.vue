@@ -1,28 +1,73 @@
 <template>
   <div>
     <UContainer>
-      <!-- <h1 class="text-primary-500 dark:text-primary-400">Beers:</h1> -->
-      <!-- <template v-for="beer in beers" :key="beer.id">
-        <div>
-          <h2 class="text-">{{ beer.name }}</h2>
+      <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
+        <div class="mx-auto md:w-3/5">
+          <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">View All The Beers</h2>
+          <p class="mt-4 text-center text-gray-600 dark:text-gray-300">Repellendus atque illum odio! Fugiat at expedita deserunt dolorum molestias.</p>
         </div>
-      </template> -->
-      <div
-        class="flex border border-gray-200 dark:border-gray-700 relative rounded-t-md not-prose bg-white dark:bg-gray-900"
-      >
-        <UTable :rows="beers" class="w-full" />
+
+        <div class="block mt-16 mb-6">
+          <UInput color="primary" variant="outline" v-model="search" placeholder="Filter beers..." />
+        </div>
+        
+        <div
+          class="flex rounded-2xl bg-gradient-to-b from-gray-200 to-white p-px dark:from-blue-700 dark:via-blue-800 dark:to-blue-900"
+        >
+          <UTable :rows="filteredRows" :columns="columns" @select="select" class="w-full" />
+        </div>
       </div>
     </UContainer>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useBeersStore } from "@/stores/beers";
-import { storeToRefs } from "pinia";
+const router = useRouter()
 
-const beersStore = useBeersStore();
-const { fetchBeers } = beersStore; // have all non reactiave stuff here
-const { beers } = storeToRefs(beersStore); // have all reactive states here
+const { beers, allBeers } = useBeers();
 
-await fetchBeers();
+const columns = [{
+  key: 'id',
+  label: 'ID'
+}, {
+  key: 'name',
+  label: 'Name'
+}, {
+  key: 'brewer',
+  label: 'Brewery'
+}, {
+  key: 'location',
+  label: 'Location'
+}, {
+  key: 'abv',
+  label: 'ABV'
+}, {
+  key: 'ibu',
+  label: 'IBU'
+}]
+
+const search = ref('')
+
+const filteredRows = computed(() => {
+  if (!search.value) {
+    return allBeers
+  }
+
+  return allBeers.filter((beer) => {
+    return Object.values(beer).some((value) => {
+      return String(value).toLowerCase().includes(search.value.toLowerCase())
+    })
+  })
+})
+
+function select(row) {
+  selected.value = row
+  console.log(selected.value)
+
+  router.push(`/beers/${row.id}`)
+}
+
+const selected = ref([])
+
+
 </script>

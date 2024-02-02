@@ -5,8 +5,10 @@ export default function () {
   const beersStore = useBeersStore();
   beersStore.fetchData();
   const { beers } = storeToRefs(beersStore);
+  const allBeers = beersStore.getBeers;
 
   return {
     beers,
+    allBeers
   };
 }
