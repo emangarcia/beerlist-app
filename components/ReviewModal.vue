@@ -53,6 +53,7 @@
 </template>
 <script setup lang="ts">
 import type { FormError, FormSubmitEvent } from "#ui/types";
+import { uuid } from 'vue-uuid';
 
 const reviewOpen = ref(false)
 
@@ -75,15 +76,30 @@ const validate = (state: any): FormError[] => {
 
 async function onSubmit(event: FormSubmitEvent<any>) {
   // TODO: Add in logic to submit the review to the API
-  
-  state.isSuccess = true;
-  state.name = '';
-  state.look = 0;
-  state.smell = 0;
-  state.taste = 0;
-  state.feel = 0;
-  state.review = undefined;
-  reviewOpen.value = false;
+  const response = await $fetch("/api/beers?id=", {
+    method: "PUT",
+    body: {
+      id: uuid.v1(),
+      name: state.name,
+      look: state.look / 10,
+      smell: state.smell / 10,
+      taste: state.taste / 10,
+      feel: state.feel / 10,
+      rating: state.look + state.smell + state.taste + state.feel / 10 / 4,
+      review: state.review,
+    },
+  });
+
+  if (response) {
+    state.isSuccess = true;
+    state.name = '';
+    state.look = 0;
+    state.smell = 0;
+    state.taste = 0;
+    state.feel = 0;
+    state.review = undefined;
+    reviewOpen.value = false;
+  }
 }
 
 </script>

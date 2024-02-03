@@ -89,7 +89,6 @@ const abvWPercentage = computed(() => {
 })
 
 const randomImage = computed(() => {
-  const randomNumber = Math.floor(Math.random() * 4) + 1;
   return `beer${Math.floor(Math.random() * 4) + 1}.png`;
 })
 
@@ -119,6 +118,7 @@ async function onSubmit(event: FormSubmitEvent<any>) {
   });
   
   if (response) {
+    beerStore.fetchData();
     state.isSuccess = true;
     state.name = '';
     state.brewer = undefined;
