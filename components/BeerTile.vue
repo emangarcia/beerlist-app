@@ -1,5 +1,5 @@
 <template>
-<div class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-200 to-white p-px dark:from-blue-700 dark:via-blue-800 dark:to-darker ">
+<NuxtLink :to="`/beers/${id}`" class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-200 to-white p-px dark:from-blue-700 dark:via-blue-800 dark:to-darker ">
   <div class="relative flex items-center h-full flex-row gap-6 rounded-2xl bg-gray-100 p-8 dark:bg-blue-900 dark:bg-opacity-60">
     <div class="w-2/3">
       <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">{{ name }}</h4>
@@ -13,12 +13,12 @@
       <img class="w-full" :src="`/beers/${image}`" alt="beer image">
     </div>
   </div>
-</div>
+</NuxtLink>
 </template>
 <script setup lang="ts">
 const props = defineProps<{
   name: string
-  id?: number
+  id?: Number
   description?: string
   image?: string
   location?: string
@@ -30,8 +30,5 @@ const props = defineProps<{
   reviews?: number
 }>()
 
-// const image = useAssets(`/assets/images/${props.image}`)
-
-console.log(props.image)
 
 </script>

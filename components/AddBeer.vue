@@ -49,7 +49,7 @@
         </UForm>
       </UCard>
       <div class="relative mx-auto max-lg:mt-12 max-lg:w-2/3 lg:w-1/3">
-        <BeerTile
+        <BeerPreview
           :name="state.name"
           :brewer="state.brewer"
           :location="state.location"
@@ -58,7 +58,7 @@
           :ibu="state.ibu"   
           :image="randomImage"           
           v-bind="$attrs"
-        ></BeerTile>
+        ></BeerPreview>
       </div>
     </div>
   </UContainer>
@@ -92,8 +92,6 @@ const randomImage = computed(() => {
   const randomNumber = Math.floor(Math.random() * 4) + 1;
   return `beer${Math.floor(Math.random() * 4) + 1}.png`;
 })
-
-console.log(randomImage.value)
 
 const validate = (state: any): FormError[] => {
   const errors = [];

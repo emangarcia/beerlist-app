@@ -1,31 +1,25 @@
 <template>
-  <UContainer>
-    <UCard class="mx-auto max-w-[65%] shadow-lg bg-blue-900">
-      <h1 class="text-primary-500 dark:text-primary-400">Beer Name</h1>
-      <!-- <template v-for="beer in beers" :key="beer.id">
-        <div>
-          <h2 class="text-">{{ beer.name }}</h2>
-        </div>
-      </template> -->
-      <div
-        class="flex border border-gray-200 dark:border-gray-700 relative rounded-t-md not-prose bg-white dark:bg-gray-900"
-      >
-        <!-- <UTable :rows="beers" class="w-full" /> -->
+  <div>
+    <UContainer>
+      <div class="detail-header text-center mb-10 w-full">
+        <h1 class="text-5xl text-white md:text-6xl  !leading-[1.15] font-bold">{{ beerData?.name }}</h1>
+    </div>
+      <div class="flex flex-wrap lg:max-w-[75%] mx-auto">
+        <BeerDetail :name="beerData?.name" :description="beerData?.description" :image="beerData?.image" :location="beerData?.location" :abv="beerData?.abv" :ibu="beerData?.ibu" :brewer="beerData?.brewer" :beerStyle="beerData?.style" :reviews="beerData?.reviews"/>  
       </div>
-    </UCard>
-  </UContainer>
+      <div class="flex flex-wrap lg:max-w-[75%] mx-auto mt-8">
+        <ReviewModal />
+        <BeerReviews :reviews="beerData?.reviews"/>  
+      </div>
+    </UContainer>
+  </div>
 </template>
 <script setup lang="ts">
 const route = useRoute()
-
 const { id } = useRoute().params
-console.log(id)
 
 const beersStore = useBeersStore();
-beersStore.fetchBeer(id);
-const { beer } = storeToRefs(beersStore);
-// const beerData = beersStore.getBeer(id);
-
-console.log(beer)
+beersStore.fetchData();
+const beerData = beersStore.getBeerById(Number(id));
 
 </script>

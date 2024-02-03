@@ -62,7 +62,6 @@ const filteredRows = computed(() => {
 
 function select(row) {
   selected.value = row
-  console.log(selected.value)
 
   router.push(`/beers/${row.id}`)
 }

@@ -8,13 +8,13 @@ type Beer = {
   ibu: string;
   description: string;
   image: string;
+  reviews: Object[];
 };
 
 export const useBeersStore = defineStore("beers", {
   state: () => ({
     //create state for beers
     beers: <Beer[]>[],
-    beer: <Beer[]>[],
   }),
   actions: {
     async fetchData() {
@@ -23,21 +23,13 @@ export const useBeersStore = defineStore("beers", {
       if (data.value) {
         this.beers = data.value;
       }
-    },
-    async fetchBeer(id: string) {
-      //fetch beer data from api
-      const { data, pending }: any = await useFetch(`/api/beers/${id}`);
-      if (data.value) {
-        this.beer = data.value;
-      }
     }
   },
   getters: {
     beerCount: (state) => state.beers.length,
     getBeers: (state) => state.beers,
-    getBeer(state) {
-      return (id) => state.beers.find((beer) => beer.id === id);
+    getBeerById: (state) => {
+      return (beerId) => state.beers.find((beer) => beer.id === beerId)
     }
-  },
-  persist: true,
+  }
 });

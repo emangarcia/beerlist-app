@@ -34,9 +34,6 @@
           <li>
             <NuxtLink to="/beers">Beers</NuxtLink>
           </li>
-          <!-- <li>
-            <NuxtLink to="/">About</NuxtLink>
-          </li> -->
 
           <li>
             <NuxtLink
@@ -107,9 +104,6 @@
           <li>
             <NuxtLink to="/beers" @click="isOpen = false" class="my-4 inline-block">Beers</NuxtLink>
           </li>
-          <!-- <li>
-            <NuxtLink to="/" @click="isOpen = false" class="my-4 inline-block">About</NuxtLink>
-          </li> -->
           <li>
             <NuxtLink
               to="/beers/add"

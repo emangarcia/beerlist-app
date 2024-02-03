@@ -8,7 +8,29 @@
     "description": "Offering a luscious blend of flavor and drinkability, this Hop Experience Ale features ample additions of sticky, lupulin-packed hops, grown in the Pacific Northwest. The result is an aromatic blast of citrus, tropical fruit, and dank herb that transitions into resinous hop flavor and a delightfully balanced finish.",
     "abv": "8.1%",
     "ibu": "110",
-    "style": "Imperial IPA"
+    "style": "Imperial IPA",
+    "reviews": [
+      {
+        "id": 1,
+        "look": 5,
+        "smell": 5,
+        "taste": 5,
+        "feel": 4,
+        "rating": 4.75,
+        "comment": "Bronze, just a slight haze. Medium. The hops are assertive, with some onion, a bit of citrus, tropical notes. So quite a wild mix of hop characteristics. Sweetish base malt, slightly biscuity. Good balance on this one. The malts are slightly sweet, but help the hop come through, especially the grapefruit, which assets itself more on the palate than on the nose. Finish is balanced - alcohol noticeable but not assertive.",
+        "reviewer": "John Doe"
+      },
+      {
+        "id": 2,
+        "look": 4,
+        "smell": 4,
+        "taste": 3,
+        "feel": 4, 
+        "rating": 3.75,
+        "comment": "Can (Jul 5, 2023 canning). Head is initially average sized, frothy/creamy, white, mostly lasting. Body is medium to dark yellow. Aroma is lightly malty (sugar cookie, toasted grain), lightly to moderately hoppy (orange, pineapple). Flavor is moderately to heavily sweet, lightly acidic, lightly to moderately bitter. Finish is lightly to moderately sweet, lightly acidic, moderately to heavily bitter. Medium to full body, velvety texture, lively carbonation, moderately alcoholic.",
+        "reviewer": "Jane Doe"
+      }
+    ]
   },
   {
     "id": 2,
@@ -19,7 +41,29 @@
     "description": "Brewed using 6 different NW varieties of hops at over 2.5 pounds per barrel, RPM IPA focuses on extreme hoppiness rather than bitterness. It’s golden to copper in color with a complex malt profile that will not overshadow the hops. Our flagship, RPM IPA, will satisfy any opinionated hop forward IPA consumer.",
     "abv": "6.6%",
     "ibu": "50",
-    "style": "American IPA"
+    "style": "American IPA",
+    "reviews": [
+      {
+        "id": 1,
+        "look": 5,
+        "smell": 5,
+        "taste": 5,
+        "feel": 4,
+        "rating": 4.75,
+        "comment": "Bronze, just a slight haze. Medium. The hops are assertive, with some onion, a bit of citrus, tropical notes. So quite a wild mix of hop characteristics. Sweetish base malt, slightly biscuity. Good balance on this one. The malts are slightly sweet, but help the hop come through, especially the grapefruit, which assets itself more on the palate than on the nose. Finish is balanced - alcohol noticeable but not assertive.",
+        "reviewer": "John Doe"
+      },
+      {
+        "id": 2,
+        "look": 4,
+        "smell": 4,
+        "taste": 3,
+        "feel": 4, 
+        "rating": 3.75,
+        "comment": "Can (Jul 5, 2023 canning). Head is initially average sized, frothy/creamy, white, mostly lasting. Body is medium to dark yellow. Aroma is lightly malty (sugar cookie, toasted grain), lightly to moderately hoppy (orange, pineapple). Flavor is moderately to heavily sweet, lightly acidic, lightly to moderately bitter. Finish is lightly to moderately sweet, lightly acidic, moderately to heavily bitter. Medium to full body, velvety texture, lively carbonation, moderately alcoholic.",
+        "reviewer": "Jane Doe"
+      }
+    ]
   },
   {
     "id": 3,
@@ -30,7 +74,29 @@
     "description": "Light body with a mild maltiness, big juicy hop aroma, lots of hoppy flavor balanced by a moderate bitterness. Big citrus and pine.",
     "abv": "6.5%",
     "ibu": "65",
-    "style": "American IPA"
+    "style": "American IPA",
+    "reviews": [
+      {
+        "id": 1,
+        "look": 5,
+        "smell": 5,
+        "taste": 5,
+        "feel": 4,
+        "rating": 4.75,
+        "comment": "Bronze, just a slight haze. Medium. The hops are assertive, with some onion, a bit of citrus, tropical notes. So quite a wild mix of hop characteristics. Sweetish base malt, slightly biscuity. Good balance on this one. The malts are slightly sweet, but help the hop come through, especially the grapefruit, which assets itself more on the palate than on the nose. Finish is balanced - alcohol noticeable but not assertive.",
+        "reviewer": "John Doe"
+      },
+      {
+        "id": 2,
+        "look": 4,
+        "smell": 4,
+        "taste": 3,
+        "feel": 4, 
+        "rating": 3.75,
+        "comment": "Can (Jul 5, 2023 canning). Head is initially average sized, frothy/creamy, white, mostly lasting. Body is medium to dark yellow. Aroma is lightly malty (sugar cookie, toasted grain), lightly to moderately hoppy (orange, pineapple). Flavor is moderately to heavily sweet, lightly acidic, lightly to moderately bitter. Finish is lightly to moderately sweet, lightly acidic, moderately to heavily bitter. Medium to full body, velvety texture, lively carbonation, moderately alcoholic.",
+        "reviewer": "Jane Doe"
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,6 +107,28 @@
     "description": "Fresh Flow is a refreshing, tropically hoppy IPA featuring fruit-forward American and New Zealand hop varietals that are balanced by a crisp malt base designed for sunny summer drinking. Brewed in cooperation with artist Chris Herbst of Ashland's Flow Factory NW, whose work is featured on the can label, Fresh Flow will be brewed often and released fresh throughout the summer.",
     "abv": "6.5%",
     "ibu": "65",
-    "style": "American IPA"
+    "style": "American IPA",
+    "reviews": [
+      {
+        "id": 1,
+        "look": 5,
+        "smell": 5,
+        "taste": 5,
+        "feel": 4,
+        "rating": 4.75,
+        "comment": "Bronze, just a slight haze. Medium. The hops are assertive, with some onion, a bit of citrus, tropical notes. So quite a wild mix of hop characteristics. Sweetish base malt, slightly biscuity. Good balance on this one. The malts are slightly sweet, but help the hop come through, especially the grapefruit, which assets itself more on the palate than on the nose. Finish is balanced - alcohol noticeable but not assertive.",
+        "reviewer": "John Doe"
+      },
+      {
+        "id": 2,
+        "look": 4,
+        "smell": 4,
+        "taste": 3,
+        "feel": 4, 
+        "rating": 3.75,
+        "comment": "Can (Jul 5, 2023 canning). Head is initially average sized, frothy/creamy, white, mostly lasting. Body is medium to dark yellow. Aroma is lightly malty (sugar cookie, toasted grain), lightly to moderately hoppy (orange, pineapple). Flavor is moderately to heavily sweet, lightly acidic, lightly to moderately bitter. Finish is lightly to moderately sweet, lightly acidic, moderately to heavily bitter. Medium to full body, velvety texture, lively carbonation, moderately alcoholic.",
+        "reviewer": "Jane Doe"
+      }
+    ]
   }
 ]
