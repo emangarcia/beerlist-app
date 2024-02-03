@@ -49,4 +49,10 @@ const ratingOverall = computed(() => {
   }
 })
 
+function getImageUrl(imagename) {
+  const imageUrl = new URL(`/assets/images/${imagename}`, import.meta.url).href
+  return imageUrl;
+
+}
+
 </script>

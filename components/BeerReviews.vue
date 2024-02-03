@@ -22,8 +22,6 @@
   </template>
 </template>
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 export interface Review {
   look: string
   smell: string
